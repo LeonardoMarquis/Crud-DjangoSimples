@@ -31,8 +31,10 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'core',
-    'bootstrap4',
+    'django_adminlte',  # tem que botar aqi em cima mesmo para sobrescrever os daqui para baixo
+    'django_adminlte_theme',    # esse django admin lte é para customizar o admin do django como quiser, tem ate documentacao
+
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -40,6 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.humanize',
+    'core',
+    'bootstrap4',
 ]
 
 MIDDLEWARE = [
