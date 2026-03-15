@@ -6,10 +6,12 @@ from .models import Produto
 from .forms import ProdutoModelForm
 
 class IndexView(ListView):
-    models = Produto
+    model = Produto
     template_name = 'index.html'
     queryset = Produto.objects.all()
     context_object_name = 'produtos'
+    paginate_by = 10
+    ordering = 'nome'
 
 class CreateProdutoView(CreateView):
     model = Produto

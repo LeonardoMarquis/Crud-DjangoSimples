@@ -2,3 +2,4 @@
 * Create!
 * Update!
 * Delete!
+* Com paginação de 10 em 10 itens!
